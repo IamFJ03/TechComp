@@ -44,7 +44,7 @@ import word from '../src/assets/word.png'
 import elipse5 from '../src/assets/Ellipse 5.png'
 import elipse6 from '../src/assets/Ellipse 6.png'
 import elipse7 from '../src/assets/Ellipse 7.png'
-
+import {Link} from 'react-router-dom'
 export default function Homepage() {
   const [isOpen, setIsOpen] = useState(false);
   const [currIndex, setCurrIndex] = useState(0);
@@ -68,11 +68,11 @@ export default function Homepage() {
       <div className='flex items-center justify-between'>
         <h1 className="text-black-600 text-2xl">LogoIpsum</h1>
         <ul className="hidden md:flex gap-6 items-center">
-          <li>About</li>
-          <li>Our Service</li>
-          <li>Portfolio</li>
-          <li>Blog</li>
-          <li>Contact</li>
+          <Link to="/About"><li>About</li></Link>
+          <Link to="/Service"><li>Our Service</li></Link>
+          <Link to="/Portfolio"><li>Portfolio</li></Link>
+          <Link to="/Blog"><li>Blog</li></Link>
+          <Link to="/Contact"><li>Contact</li></Link>
           <button className='border-1 px-3 py-2 rounded text-white bg-red-500'>Get In Touch</button>
         </ul>
         <button className='border-1 px-3 py-2 rounded text-white bg-red-500 md:hidden'>Get In Touch</button>
@@ -84,11 +84,11 @@ export default function Homepage() {
         </button>
         {isOpen && (
           <ul className='absolute top-30 flex flex-col gap-6 items-center shadow-md my-4 py-4 w-md left-0 md:hidden bg-white'>
-            <li>About</li>
-            <li>Our Service</li>
-            <li>Portfolio</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <Link to="/About"><li>About</li></Link>
+          <Link to="/Service"><li>Our Service</li></Link>
+          <Link to="/Portfolio"><li>Portfolio</li></Link>
+          <Link to="/Blog"><li>Blog</li></Link>
+          <Link to="/Contact"><li>Contact</li></Link>
           </ul>
         )}
       </div>
