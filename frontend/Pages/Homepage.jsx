@@ -246,7 +246,7 @@ export default function Homepage() {
           <p className='text-4xl font-bold mb-10'>Our Leaders</p>
           <div className='flex md:flex-row flex-col justify-between px-40 gap-10 md:gap-0'>
             <div>
-              <img src={rectangle14} className='' />
+              <img src={rectangle14} />
               <p className='text-red-500 mt-5 mb-5 font-bold'>Larry F. Burnett</p>
               <p>CEO</p>
             </div>

@@ -12,6 +12,9 @@ import rectangle29 from '../src/assets/Rectangle 29.png'
 import python from '../src/assets/python.png'
 import react from '../src/assets/React.png'
 import word from '../src/assets/word.png'
+import call from '../src/assets/call.png'
+import mail from '../src/assets/mail.png'
+import location from '../src/assets/location.png'
 import linked from '../src/assets/Linked.png'
 import insta from '../src/assets/insta.png'
 import facebook from '../src/assets/facebook.png'
@@ -22,7 +25,7 @@ export default function Contact() {
   return (
     <div>
       <div className='flex items-center justify-between'>
-        <h1 className="text-black-600 text-2xl">LogoIpsum</h1>
+        <h1 className="text-black-600 text-2xl font-bold">LogoIpsum</h1>
         <ul className="hidden md:flex gap-6 items-center">
           <Link to="/About"><li>About</li></Link>
           <Link to="/Service"><li>Our Service</li></Link>
@@ -48,12 +51,57 @@ export default function Contact() {
           </ul>
         )}
       </div>
-      <div className='w-screen h-50 bg-blue-950 md:right-40 right-8 relative flex flex-col items-center justify-center'>
+      <div className='w-screen h-80 bg-blue-950 md:right-40 right-8 relative flex flex-col items-center justify-center mt-10'>
         <p className='text-red-500 font-bold text-4xl'>Contact</p>
         <p className='text-md text-white'>HOME / CONTACT</p>
       </div>
-      
-        <div className='hidden md:block relative ml-40'>
+      <div className='bg-red-50 w-screen relative md:right-40 right-8 h-350 md:h-200'>
+              <p className='text-red-500 text-2xl font-bold pt-20'>\ Get In Touch \</p>
+              <p className='text-4xl text-black font-bold'>Hey! Let's Talk</p>
+              <div className='flex flex-col md:flex-row gap-10 md:gap-0 justify-between px-40 py-10'>
+                <div className='h-140 w-90 md:w-200 bg-white rounded-2xl flex flex-col gap-10 relative right-30 md:right-0'>
+                  <input type='text' placeholder='Name' className=' bg-gray-100 p-3 mx-10 mt-10 rounded' />
+                  <input type='text' placeholder='Email' className='bg-gray-100 p-3 mx-10 rounded' />
+                  <input type='text' placeholder='Phone' className=' bg-gray-100 p-3 mx-10 rounded' />
+                  <textarea type='text' placeholder='Your Message' rows={4} cols={50} className=' bg-gray-100 p-3 mx-10 rounded' />
+                  <button className='self-start ml-10 bg-red-500 text-white p-3 rounded'>Send Now</button>
+                </div>
+                <div className='h-140 w-90 bg-white rounded-2xl flex flex-col gap-10 p-10 relative md:right-0 right-30'>
+                  <div className='flex gap-5'>
+                    <img src={call} className='bg-gray-100 p-3 rounded-2xl h-13' />
+                    <div className='text-left'>
+                      <p className='text-red-500 font-bold'>Call Anytime</p>
+                      <p>+ 91 23678 27867</p>
+                      <p>+ 91 67678 92878</p>
+                    </div>
+                  </div>
+                  <div className='flex gap-5'>
+                    <img src={mail} className='bg-gray-100 p-3 rounded-2xl h-12' />
+                    <div className='text-left'>
+                      <p className='text-red-500 font-bold'>Send Email</p>
+                      <p>connect@itfirms.com</p>
+                      <p>hello@itfirms.com</p>
+                    </div>
+                  </div>
+                  <div className='flex gap-5'>
+                    <img src={location} className='bg-gray-100 py-3 px-4 rounded-2xl h-13' />
+                    <div className='text-left'>
+                      <p className='text-red-500 font-bold'>Visit Us</p>
+                      <p>20 Island Park Road, </p>
+                      <p>New Jearsy, New York, USA</p>
+                    </div>
+                  </div>
+                  <p className='font-bold text-2xl'>Follow Us</p>
+                  <div className='flex justify-between px-5'>
+                    <img src={linked} className='bg-red-500 p-3 rounded' />
+                    <img src={insta} className='bg-red-500 p-3 rounded' />
+                    <img src={facebook} className='bg-red-500 p-3 rounded' />
+                    <img src={twitter} className='bg-red-500 p-3 rounded' />
+                  </div>
+                </div>
+              </div>
+            </div>
+        <div className='hidden md:block relative ml-40 mt-30'>
                 <img src={rectangle28} className='md:h-75 relative md:right-0 right-25' />
                 <p className='relative text-3xl font-bold bottom-110 p-50 text-white right-15'>“Some of the History of Our Company is that
                   we are Catching up through Video”</p>
