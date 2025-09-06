@@ -44,7 +44,7 @@ import word from '../src/assets/word.png'
 import elipse5 from '../src/assets/Ellipse 5.png'
 import elipse6 from '../src/assets/Ellipse 6.png'
 import elipse7 from '../src/assets/Ellipse 7.png'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 export default function Homepage() {
   const [isOpen, setIsOpen] = useState(false);
   const [currIndex, setCurrIndex] = useState(0);
@@ -85,10 +85,10 @@ export default function Homepage() {
         {isOpen && (
           <ul className='absolute top-30 flex flex-col gap-6 items-center shadow-md my-4 py-4 w-md left-0 md:hidden bg-white'>
             <Link to="/About"><li>About</li></Link>
-          <Link to="/Service"><li>Our Service</li></Link>
-          <Link to="/Portfolio"><li>Portfolio</li></Link>
-          <Link to="/Blog"><li>Blog</li></Link>
-          <Link to="/Contact"><li>Contact</li></Link>
+            <Link to="/Service"><li>Our Service</li></Link>
+            <Link to="/Portfolio"><li>Portfolio</li></Link>
+            <Link to="/Blog"><li>Blog</li></Link>
+            <Link to="/Contact"><li>Contact</li></Link>
           </ul>
         )}
       </div>
